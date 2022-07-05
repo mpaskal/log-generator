@@ -1,8 +1,8 @@
 <h1 align="center">Log Generator</h1>
 
 <h2>Summary</h2>
-<div>Simple UI to generate a log of apps versions.
-When users upload new versions or roll them back a new record appears.</div>
+<p>Simple UI of a log generator of an application version updates.
+When users upload new versions or roll them back a new record appears with a timestamp of the moment when a new record was added.</p>
 
 <h2>How to use</h2>
 

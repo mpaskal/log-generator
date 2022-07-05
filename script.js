@@ -81,14 +81,14 @@ function addLogs() {
         list.unshift(version.value);
         appMap.set(app.value, list);
       }
-      const log = document.createElement("div");
+      const log = document.createElement("p");
       log.innerHTML = `${date} ${app.value} ${version.value}`;
       document.body.appendChild(log);
     } else {
       if (version.value != "rollback") {
         list.unshift(version.value);
         appMap.set(app.value, list);
-        const log = document.createElement("div");
+        const log = document.createElement("p");
         log.innerHTML = `${date} ${app.value} ${version.value}`;
         document.body.appendChild(log);
       }

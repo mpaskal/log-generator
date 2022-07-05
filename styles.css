@@ -10,7 +10,7 @@ h1 {
   margin-bottom: 3%;
 }
 .input-field {
-  margin-top: 1.2rem;
+  margin-top: 1.1rem;
 }
 #app {
   margin-left: 2rem;
@@ -18,13 +18,13 @@ h1 {
 #version {
   margin-left: 3.5rem;
 }
-#add-log {
+#add {
   margin-top: 0.5rem;
   margin-bottom: 1.2rem;
   margin-left: 0.5rem;
 }
 #reset {
-  margin-left: 9.3rem;
+  margin-left: 11rem;
 }
 #logs-text {
   width: 60%;

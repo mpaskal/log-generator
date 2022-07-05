@@ -11,10 +11,38 @@
   <body>
     <main>
       <h1>Log generator</h1>
-      <p>Application <input type="text" /></p>
-      <p>Version <input type="text" /></p>
-      <p><button type="submit">Submit</button></p>
-      <p id="logs">logs</p>
+      <div class="input-field">
+        Application
+        <input
+          type="text"
+          id="app"
+          minlength="1"
+          maxlength="150"
+          pattern="^[0-9a-zA-Z-'_]+$"
+          required
+          placeholder="Application"
+        />
+      </div>
+      <div id="app-error"></div>
+      <div class="input-field">
+        Version
+        <input
+          type="text"
+          id="version"
+          minlength="1"
+          maxlength="150"
+          pattern="^[0-9a-zA-Z-'_]+$"
+          required
+          placeholder="Version"
+        />
+      </div>
+      <div id="version-error"></div>
+      <div>
+        <button name="reset" id="reset" onclick="reset()">Reset</button>
+        <button name="addLog" id="add-log" onclick="addLogs()">Add Log</button>
+      </div>
+      <hr />
+      <div id="logs-text"></div>
     </main>
   </body>
 </html>

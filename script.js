@@ -1,3 +1,5 @@
+const appMap = new Map();
+
 class Node {
   constructor(val) {
     this.value = val;
@@ -33,7 +35,16 @@ class SinglyLinkedList {
     return this;
   }
 }
-const appMap = new Map();
+
+function reset() {
+  document.querySelector("#app-error").innerHTML = "";
+  document.querySelector("#version-error").innerHTML = "";
+  document.querySelector("#app").value = "";
+  document.querySelector("#version").value = "";
+  app.style.border = "1px solid black";
+  version.style.border = "1px solid black";
+}
+
 function addLogs() {
   let list = new SinglyLinkedList();
   const app = document.querySelector("#app");
@@ -82,20 +93,6 @@ function addLogs() {
         document.body.appendChild(log);
       }
     }
-
-    document.querySelector("#app").value = "";
-    document.querySelector("#version").value = "";
-    document.getElementById("app-error").innerHTML = "";
-    document.getElementById("version-error").innerHTML = "";
-    app.style.border = "1px solid black";
-    version.style.border = "1px solid black";
+    reset();
   }
-}
-function reset() {
-  document.getElementById("app-error").innerHTML = "";
-  document.getElementById("version-error").innerHTML = "";
-  document.querySelector("#app").value = "";
-  document.querySelector("#version").value = "";
-  app.style.border = "1px solid black";
-  version.style.border = "1px solid black";
 }

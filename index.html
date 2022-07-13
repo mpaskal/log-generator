@@ -11,32 +11,35 @@
   <body>
     <main>
       <h1>Log generator</h1>
-      <div class="input-field">
-        Application
-        <input
-          type="text"
-          id="app"
-          minlength="1"
-          maxlength="150"
-          pattern="^[0-9a-zA-Z-'_]+$"
-          required
-          placeholder="Application"
-        />
-      </div>
-      <div id="app-error"></div>
-      <div class="input-field">
-        Version
-        <input
-          type="text"
-          id="version"
-          minlength="1"
-          maxlength="150"
-          pattern="^[0-9a-zA-Z-'_]+$"
-          required
-          placeholder="Version"
-        />
-      </div>
-      <div id="version-error"></div>
+      <fieldset>
+        <legend>Updated app</legend>
+        <div class="input-field">
+          <label for="app">Application</label>
+          <input
+            type="text"
+            id="app"
+            minlength="1"
+            maxlength="150"
+            pattern="^[0-9a-zA-Z-'_]+$"
+            required
+            placeholder="Application"
+          />
+        </div>
+        <div id="app-error"></div>
+        <div class="input-field">
+          <label for="version">Version</label>
+          <input
+            type="text"
+            id="version"
+            minlength="1"
+            maxlength="150"
+            pattern="^[0-9a-zA-Z-'_]+$"
+            required
+            placeholder="Version"
+          />
+        </div>
+        <div id="version-error"></div>
+      </fieldset>
       <div>
         <button name="reset" id="reset" onclick="reset()">Reset</button>
         <button name="addLog" id="add" onclick="addLogs()">Add</button>

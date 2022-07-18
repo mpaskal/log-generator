@@ -10,7 +10,8 @@ h1 {
   margin-bottom: 3%;
 }
 .fieldset {
-  float: left;
+  display: flex;
+  justify-content: left;
 }
 .input-field {
   margin-top: 1.1rem;
